@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <title>Welcome</title>
+  </head>
+  <body>
+    <div id="popupBg" class="hidden"></div>
+    <form id="nameForm" class="hidden">
+      <label for="username" class="nameLabel"
+        >Hello!<br />What's your name?</label
+      >
+      <input
+        id="username"
+        class="username"
+        type="text"
+        placeholder="username"
+        style="background-color: transparent; border: 0 solid black"
+        required
+      />
+      <button class="sendBtn">💌</button>
+    </form>
+
+    <div id="container" class="hidden">
+      <h1 id="bigClock"></h1>
+      <br />
+      <p id="dateSet"></p>
+      <div class="weather">
+        <table>
+          <tr>
+            <th><span id="weatherImage"></span></th>
+            <th>
+              <span id="city" class="para"></span>
+            </th>
+            <th><span id="weather" class="para"></span></th>
+          </tr>
+        </table>
+      </div>
+      <p id="userHello"></p>
+
+      <form id="todoForm">
+        <div class="linein">
+          <input
+            style="background-color: transparent; border: 0 solid black"
+            id="todoInput"
+            type="text"
+            placeholder="Something to do"
+            required
+          />
+          <button>💌</button> <br />
+        </div>
+      </form>
+      <ul id="hereList"></ul>
+    </div>
+    <script src="index.js"></script>
+    <script src="weather.js"></script>
+    <script src="todos.js"></script>
+  </body>
+</html>

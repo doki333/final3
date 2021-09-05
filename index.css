@@ -1,0 +1,182 @@
+@import "reset.css";
+.hidden {
+  display: none;
+  opacity: 0;
+}
+
+body {
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+#container h1 {
+  position: absolute;
+  color: white;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-family: "Gowun Dodum", sans-serif;
+  font-size: 75px;
+  text-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
+    0 1px 3px rgba(50, 50, 93, 0.11);
+}
+
+#container #dateSet {
+  position: absolute;
+  color: white;
+  font-family: "Gowun Dodum", sans-serif;
+  top: 29%;
+  left: 41%;
+  transform: translate(-50%, 0);
+  text-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
+    0 1px 3px rgba(50, 50, 93, 0.11);
+}
+
+.weather {
+  position: absolute;
+  left: 92%;
+  font-family: "Gowun Dodum", sans-serif;
+}
+.weather .para {
+  color: white;
+  font-size: 14px;
+  text-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
+    0 1px 3px rgba(50, 50, 93, 0.11);
+}
+
+.weather img {
+  width: 45px;
+  height: 45px;
+}
+
+tr {
+  display: block;
+  float: left;
+}
+
+th,
+td {
+  display: block;
+}
+
+/* popup */
+#popupBg {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#nameForm {
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Gowun Dodum", sans-serif;
+  position: fixed;
+  background-color: rgba(248, 237, 235, 0.8);
+  width: 25%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2px 7px rgba(50, 50, 93, 0.11);
+}
+
+#nameForm input {
+  text-align: center;
+}
+#nameForm input:focus {
+  outline: none;
+}
+
+/* username */
+#userHello {
+  position: absolute;
+  color: white;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+  font-family: "Gowun Dodum", sans-serif;
+  text-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
+    0 1px 3px rgba(50, 50, 93, 0.11);
+}
+
+/* todolist */
+#todoForm {
+  position: absolute;
+  display: flex;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 10px;
+}
+
+#hereList {
+  margin-top: 10px;
+  position: absolute;
+  width: 400px;
+  height: 350px;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  font-family: "Gowun Dodum", sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+#hereList li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+#todoForm .linein {
+  border-bottom: 1px solid white;
+}
+
+#hereList span {
+  text-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
+    0 1px 3px rgba(50, 50, 93, 0.11);
+}
+
+#hereList span:hover {
+  text-decoration-line: line-through;
+}
+
+#todoForm input:focus {
+  outline: none;
+}
+
+#todoForm input::placeholder {
+  color: whitesmoke;
+}
+
+#todoForm input {
+  width: 350px;
+  color: white;
+}
+
+#todoForm button {
+  background-color: transparent;
+  border: 0 solid black;
+}
+
+#todoForm button:active {
+  transform: scale(0.98);
+}
+
+#hereList button {
+  background-color: transparent;
+  border: 0 solid black;
+  cursor: pointer;
+}
